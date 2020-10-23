@@ -1,0 +1,35 @@
+.loader {
+    width: 80px;
+    height: 23.3333333333px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.loader_ball {
+    will-change: transform;
+    height: 23.3333333333px;
+    width: 23.3333333333px;
+    border-radius: 50%;
+    background-color: #1E90FF;;
+    position: absolute;
+    animation: grow 1s ease-in-out infinite alternate;
+}
+.loader_ball.ball1 {
+    left: 0;
+    transform-origin: 100% 50%;
+}
+.loader_ball.ball2 {
+    left: 50%;
+    transform: translateX(-50%) scale(1);
+    animation-delay: 0.33s;
+}
+.loader_ball.ball3 {
+    right: 0;
+    animation-delay: 0.66s;
+}
+@keyframes grow {
+    to {
+        transform: translateX(-50%) scale(0);
+   }
+}

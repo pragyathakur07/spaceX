@@ -1,0 +1,64 @@
+.cardbox {
+    position: relative;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.15);
+    transition: all 0.3s ease-in-out;
+    width: 15rem;
+    margin-bottom: 1rem;
+}
+ 
+.cardbox:hover {
+    transform: scale(1.03, 1.03);
+}
+
+.cardbox::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.cardImg {
+  width: 210px !important;
+  height: 220px;
+  margin: 14px;
+  background-color: #eeeeee;
+}
+
+#cardbody {
+  padding-top: 0;
+  padding-left: 14px;
+}
+
+#cardtitle {
+  color: #1663be;
+  font-weight: 800;
+  font-size: 1rem;
+}
+
+.textfont {
+  font-weight: 700;
+}
+
+.mission_text {
+  font-weight: 700;
+}
+
+.missioncls {
+  margin-bottom: 0.3rem;
+  padding-left: 25px;
+}
+
+@media screen and (max-width: 767px) {
+  .cardbox {        
+      width: 100%;
+  }
+  .cardImg {
+    width: 91% !important;
+  }
+}

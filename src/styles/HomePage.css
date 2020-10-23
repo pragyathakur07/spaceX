@@ -1,0 +1,37 @@
+.maindiv {
+    background-color: #eeeeee;
+}
+.maincont {
+    margin: 0 20px !important;
+    width: 98%;
+}
+.filtercls  {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: white;
+    border-radius: .25rem;
+    height: fit-content;
+    max-width: 250px;
+}
+.textstyle {
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding: 7px 0;
+}
+.devcls {
+    font-weight: 900;
+}
+.devparent {
+    margin: 20px auto 20px auto;
+}
+
+@media screen and (max-width: 767px) {
+    .filtercls {        
+        margin-left: 11px;
+        margin-bottom: 20px;
+        max-width: 315px;
+    }
+    .launchescls {
+        max-width: 327px;
+    }
+}

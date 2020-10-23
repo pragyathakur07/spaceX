@@ -1,0 +1,50 @@
+.cont{
+    margin: 5px 10px;
+}
+.col_cls {
+    margin-top: 5px;
+}
+.filtertxt {
+    font-size: 1.3em;
+    font-weight: 700;
+}
+.btncls {
+  margin-top: 10px;
+  background-color: #69BE28;
+  border-color: #69be28;
+  max-width: 84px;
+  min-width: 66px;
+  color: #000;
+}
+#resetbtn {
+  width: 100% !important;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  background-color: #69BE28;
+  border-color: #69be28;
+  color: #000;
+}
+
+@media screen and (max-width: 767px) {
+  .btncls {
+      width: 100%;
+      margin-left: 11px;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}

@@ -1,0 +1,21 @@
+.cardParent {
+    padding-right: 0;
+}
+.nodata {
+    margin: 10% auto;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 767px) {
+    .cardParent {        
+        padding-left: 11px;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 767px) {
+    .cardParent {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}

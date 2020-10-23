@@ -1,0 +1,21 @@
+.text_cls {
+    text-align: center;
+    margin-top: 20px;
+}
+.line_cls {
+    display: block;
+    width: 80%;
+    height: 2px;
+    background: black;
+    margin: 5px auto;
+}
+#launchid {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 767px) {
+    .line_cls {
+      width: 70%;
+      margin-left: 35px;
+    }
+}
