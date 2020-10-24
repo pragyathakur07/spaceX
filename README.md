@@ -17,4 +17,7 @@ If the page is refreshed with the applied filters in the URL – the resulting p
 I have added an additional button for 'Reset Filters'. If the user has applied all the filters and it wants to go back to initial data, then they can use 'Reset Filter' button for updating the page with initial records.
 
 ### Deployment
-This project is deployed on heroku.
+
+GitHub repo: https://github.com/pragyathakur07/spaceX
+
+Heroku link: https://spacexreactapp.herokuapp.com/
