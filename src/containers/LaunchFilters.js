@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
 import history from '../routes/history';
 import '../styles/LaunchFilter.css';
 import TextComponent from '../components/TextComponent';
 import { constants } from '../constants';
+import { btnLoadStyle, getbtndata, addbtnstyle } from '../utils';
 
 const LaunchFilters = () => {
     const launch_years = constants.yeardata;
+
+    useEffect(() => {
+        console.log("in btn");
+        if(typeof window !== 'undefined'){
+            let url = window.location.href;
+            btnLoadStyle(url);
+        }
+    }, [])
 
     const sethistory = (path, val, btnId, btncls) => {       
         let href = window.location.href;
@@ -38,29 +47,18 @@ const LaunchFilters = () => {
         }
     }
 
-    const getAllbtns = (btns) => {
-        Array.from(btns).forEach(element => {
-            addbtnstyle(element, "#69be28", "#000");
-        });  
-    }
-
-    const addbtnstyle = (btn, bcolor, color) => {
-        btn.style.setProperty("background-color", `${bcolor}`, "important"); 
-        btn.style.setProperty("color", `${color}`, "important"); 
-    }
-
     const getbtnStyle = (btnId, btncls) => {
         if(btnId){
             let allbtns = document.getElementsByClassName(btncls);
             let clickedbtn = document.getElementById(btnId);
-            getAllbtns(allbtns);
+            getbtndata(allbtns);
             addbtnstyle(clickedbtn, "#28a745", "#fff");   
         }
     }
 
     const getresetdata = () => {
         let allbtns = document.getElementsByClassName('btncls');
-        getAllbtns(allbtns);
+        getbtndata(allbtns);
         history.push({
             pathname: '/',
             state: {"isLoading": true}
